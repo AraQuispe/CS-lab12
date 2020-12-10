@@ -9,6 +9,11 @@ public class CajeraThread extends Thread {
     private long initialTime;
 
     // Constructor, getter & setter
+    public CajeraThread(String nombre, Cliente cliente, long init) {
+        this.nombre = nombre;
+        this.cliente = cliente;
+        this.initialTime = init;
+    }
 
     @Override
     public void run() {
